@@ -5,6 +5,8 @@ class InsertionSort:
             for j in range(i, n):
                 if a[j] < a[j-1]:
                     self.swap(a, j, j-1)
+                else:
+                    break
         return a
 
     def swap(self, a, i, j):
