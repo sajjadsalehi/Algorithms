@@ -8,10 +8,12 @@ class ShellSort:
 
         while h >= 1:
             for i in range(h, n):
-                for j in range(i, h):
+                for j in range(i, h, -h):
                     if j >= h and a[j] < a[j - h]:
                         self.swap(a, j, j - h)
-            h = h/3
+                    else:
+                        break
+            h = int(h/3)
         return a
 
     def swap(self, a, i, j):
