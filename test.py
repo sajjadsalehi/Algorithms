@@ -1,18 +1,23 @@
-from BinaryHeap import *
+from BST import *
 
-bh = BinaryHeap()
+bst = Bst()
 
-bh.insert("s")
-bh.insert("r")
-bh.insert("o")
-bh.insert("n")
-bh.insert("p")
-bh.insert("g")
-bh.insert("a")
-bh.insert("e")
-bh.insert("i")
-bh.insert("h")
+bst.put("h", "h")
+bst.put("c", "c")
+bst.put("a", "a")
+bst.put("r", "r")
+bst.put("x", "x")
+bst.put("e", "e")
+bst.put("z", "z")
+bst.put("s", "s")
 
-bh.insert("z")
+print(bst.min())
+print(bst.max())
+print(bst.floor("j"))
+print(bst.size())
+print(bst.rank("z"))
+print(bst.keys())
+bst.deleteMin()
+bst.delete("s")
+print(bst.keys())
 
-print(bh.delMax())
