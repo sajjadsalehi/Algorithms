@@ -14,10 +14,3 @@ class BinarySearch:
                 return mid
 
         return -1
-
-
-if __name__ == '__main__':
-    lst = [12, 43, 52, 71, 86, 98, 108]
-    bSearch = BinarySearch()
-    position = bSearch.search(lst, 98)
-    print(position)

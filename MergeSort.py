@@ -35,8 +35,3 @@ class MergeSort:
                 i += 1
 
 
-if __name__ == '__main__':
-    merge_sort = MergeSort()
-    a = [1, 90, 73, 12, 2, 24]
-    sorted_array = merge_sort.sort(a)
-    print(sorted_array)

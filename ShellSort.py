@@ -22,8 +22,3 @@ class ShellSort:
         a[i] = temp
 
 
-if __name__ == '__main__':
-    shell_sort = ShellSort()
-    a = [1, 90, 73, 12, 2, 24]
-    sorted_array = shell_sort.sort(a)
-    print(sorted_array)

@@ -42,9 +42,3 @@ class QuickSort:
         self.qsort(a, low, j-1)
         self.qsort(a, j+1, high)
 
-
-if __name__ == '__main__':
-    quick_sort = QuickSort()
-    a = [1, 90, 73, 12, 2, 24]
-    sorted_array = quick_sort.sort(a)
-    print(sorted_array)

@@ -19,10 +19,4 @@ class QuickUnion:
         self.id[i] = j
 
 
-if __name__ == '__main__':
-    quickUnion = QuickUnion(10)
-    quickUnion.union(5, 6)
-    quickUnion.union(0, 2)
-    quickUnion.union(0, 5)
-    print(quickUnion.connected(2, 6))
 

@@ -16,8 +16,3 @@ class SelectionSort:
         a[i] = temp
 
 
-if __name__ == '__main__':
-    selection_sort = SelectionSort()
-    a = [1, 90, 73, 12, 2, 24]
-    sorted_array = selection_sort.sort(a)
-    print(sorted_array)
