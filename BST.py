@@ -147,3 +147,14 @@ class Bst:
         node.count = 1 + self.sizeIt(node.left) + self.sizeIt(node.right)
         return node
 
+    def contains(self, key):
+        if self.get(key) is not None:
+            return True
+        return False
+
+    def rangeCount(self, low, high):
+        if self.contains(high):
+            return self.rank(high) - self.rank(low) + 1
+        else:
+            return self.rank(high) - self.rank(low)
+
