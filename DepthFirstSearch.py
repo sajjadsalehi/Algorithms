@@ -1,5 +1,3 @@
-from Graph import *
-
 class DepthFirstSearch:
 
     def __init__(self, graph, start):
