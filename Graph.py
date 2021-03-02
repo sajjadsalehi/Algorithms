@@ -10,3 +10,6 @@ class Graph:
 
     def adj(self, v):
         return self.adj(v)
+
+    def size(self):
+        return len(self.v)
