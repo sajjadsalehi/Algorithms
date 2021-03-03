@@ -1,11 +1,14 @@
-class ConnectedComponents:
+from TopologicalOrder import *
+
+
+class StrongConnectedComponents:
 
     def __init__(self, graph):
         self.marked = [False]*graph.size()
         self.id = [0]*graph.size()
         self.count = 0
-
-        for v in range(graph.size()):
+        topologicalOrder = TopologicalOrder(graph.reverse, 0)
+        for v in topologicalOrder.reverse():
             if not self.marked[v]:
                 self.dfs(graph, v)
                 self.count += 1

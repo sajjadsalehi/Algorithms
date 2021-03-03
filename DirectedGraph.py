@@ -12,3 +12,10 @@ class DirectedGraph:
 
     def size(self):
         return len(self.v)
+
+    def reverse(self):
+        new_adjs = [[None]]*self.v
+        for i in range(len(self.adj)):
+            for j in range(len(self.adj[i])):
+                new_adjs[j].append(i)
+        self.adj = new_adjs
