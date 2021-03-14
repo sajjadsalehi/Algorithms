@@ -7,7 +7,7 @@ class StrongConnectedComponents:
         self.marked = [False]*graph.size()
         self.id = [0]*graph.size()
         self.count = 0
-        topologicalOrder = TopologicalOrder(graph.reverse, 0)
+        topologicalOrder = TopologicalOrder(graph.reverse(), 0)
         for v in topologicalOrder.reverse():
             if not self.marked[v]:
                 self.dfs(graph, v)

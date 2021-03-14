@@ -8,7 +8,7 @@ class DirectedGraph:
         self.adj[v].append(w)
 
     def adj(self, v):
-        return self.adj(v)
+        return self.adj[v]
 
     def size(self):
         return len(self.v)

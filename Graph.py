@@ -9,7 +9,7 @@ class Graph:
         self.adj[w].append(v)
 
     def adj(self, v):
-        return self.adj(v)
+        return self.adj[j]
 
     def size(self):
         return len(self.v)

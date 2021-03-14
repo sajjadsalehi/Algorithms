@@ -4,7 +4,9 @@ class TopologicalOrder:
         self.marked = []
         self.s = start
         self.reversePost = []
-        self.dfs(graph, start)
+        for v in graph.v:
+            if not self.marked[v]:
+                self.dfs(graph, v)
         self.reverse()
 
     def dfs(self, graph, v):
